@@ -14,7 +14,7 @@
       background-color: black;
       border-style: none;
       height: 2px;
-      width: 30%:
+      width: 30%;
     }
   </style>
 
@@ -22,134 +22,91 @@
 
 <body>
 
-  <h1>James Wurbel</h1>
-  <h4>
-    Email:
-    <a href="mailto:jameswurbel.it@gmail.com">jameswurbel.it@gmail.com</a>
-  </h4>
-  <h4>
-    Github:
-    <a href="https://github.com/jamesoundb">James Wurbel Github</a>
-  </h4>
-  <h4>
-    LinkedIn:
-    <a href="https://www.linkedin.com/in/james-wurbel-42425b3a/">James Wurbel LinkedIn</a>
-  </h4>
-  <p>323-350-4832</p>
-  <p><em>SRE/DevOps Engineer, Audio Engineer</em></p>
+  <header>
+    <h1>James Wurbel</h1>
+    <p>
+      <strong>Phone:</strong> (323) 350-4832 | 
+      <strong>Email:</strong> <a href="mailto:jameswurbel.it@gmail.com">jameswurbel.it@gmail.com</a> | 
+      <strong>Location:</strong> Sunnyvale, CA
+    </p>
+    <p>
+      <strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/james-wurbel-42425b3a/">James Wurbel LinkedIn</a> |
+      <strong>GitHub:</strong> <a href="https://github.com/jamesoundb">James Wurbel GitHub</a>
+    </p>
+  </header>
   <hr>
-  <h3><strong>Objective:</strong></h3>
-
-  <ul>
-    <li>I’m seeking an opportunity to be part of a collaborative goal in the success of a
-      company’s overall performance and growth in today’s ever advancing operations of
-      information technology.
-    </li>
-  </ul>
-
-  <h3><strong>Skills Summary:</strong></h3>
-
-  <ul>
-    <li>Knowledge of software development cycle, (scrum, agile) infrastructure development,
-      production support, automation deployment and configuration services utilizing tools
-      such as Kubernetes, Terraform, Ansible, Jenkins, Packer, and Docker. Experience with
-      cloud services, (GCP, AWS) Linux/Unix Administration, Python, and Javascript.
-    </li>
-  </ul>
-
-  <h3><strong>Previous Projects:</strong></h3>
-
-  <ul>
-    <li>Python Project: Writing scripts that interact with the operating system and Gmail API by
-      creating a service account in GCP with OAuth 2.0 credentials to send email notifications
-      when certain files are created locally.
-    </li>
-  </ul>
-  <ul>
-    <li>Jenkins and Packer Projects: Using Packer to create golden AMIs with Jenkins, the AWS cli, 
-      and Python bootstrapped. Ansible was used as a provisioner in the Packer file to ensure all
-      dependencies were met to properly configure everything. I also included a Python script to
-      parse the Packer manifest file and return the AMI ID and region data.
-    </li>
-  </ul>
-  <ul>
-    <li>Terraform Project: Writing Terraform for different cloud architecture projects involving
-      standing up highly available microservices. Running multiple workspaces in Terraform
-      Cloud for use with different environments. Writing Terraform code that creates files locally
-      for my use in personal projects.
-    </li>
-  </ul>
+  <section>
+    <h2>Summary</h2>
+    <p>
+      A results-driven engineer with extensive hands-on experience in public cloud technologies (GCP/AWS), specializing in Infrastructure as Code (IaC), automation, and security. Recognized for performing at a senior level to enable application teams to migrate and operate services securely, reliably, and efficiently in the cloud. Proven ability to architect foundational cloud solutions, remediate security findings, and streamline operations through custom tooling. A relentless self-starter with a track record of going above and beyond to master complex distributed systems and mentor peers. Been driving Kubernetes and AI adoption as a side project to put the future now.
+    </p>
+  </section>
+  <section>
+    <h2>Core Competencies & Technical Skills</h2>
     <ul>
-      <li>Cloud Resume Challenge: Building a static website (the one you are
-      viewing!) to showcase my resume. I used Terraform to build out all of the
-      infrastructure in AWS and I used Github Actions for my CI/CD pipeline.
-      New deployments of both the frontend and the backend are triggered when
-      code is pushed to the two different repositories. I had fun working
-      through this challenge and I definitely learned a lot.
+      <li><strong>Cloud Platforms:</strong> Google Cloud Platform (GCP), Amazon Web Services (AWS)</li>
+      <li><strong>Infrastructure as Code (IaC):</strong> Terraform, Packer, Crossplane, Custom Resource Definitions (XRDs), Compositions, Mutating Webhooks</li>
+      <li><strong>Security & IAM:</strong> HashiCorp Vault, Mutating Webhooks, Cloud Security Posture, Argo CD, Sentinel, GCP IAM, Cloud Armor</li>
+      <li><strong>Container & Orchestration:</strong> Kubernetes (GKE), Docker</li>
+      <li><strong>Scripting & Automation:</strong> Golang, Python, Cloud Functions, Rundeck</li>
+      <li><strong>Networking & Internet Principles:</strong> DNS, Load Balancing, HTTP/HTTPS, TCP/IP</li>
+      <li><strong>AI Integration:</strong> Gemini Code Assist, GitHub Copilot</li>
+    </ul>
+  </section>
+  <section>
+    <h2>Professional Experience & Impact</h2>
+    <h3>Clover, a Fiserv Company | Sunnyvale, CA | Site Reliability Engineer | Oct 2024 – Present</h3>
+    <ul>
+      <li><strong>Platform Engineering & Architecture:</strong>
+        <ul>
+          <li>Spearheaded the Kubernetes Platform Abstraction for Vault, designing and implementing a mutating admission webhook in Golang to automate secret injection. This eliminated manual configurations for microservices and established a secure, standardized pattern for secrets management across the platform. These patterns were backported into other features elevating other compositions by taking the hardest composition and applying hard-won design patterns into future development efforts. Combined this forward thinking architecture with Project Onboarding for Crossplane that would accelerate engineering ramp-up for new engineers by several weeks.</li>
+          <li>Engineered and configured an Istio Egress Gateway PoC to secure and control outbound traffic for microservices; deployed and configured Kiali to provide deep observability into service mesh traffic patterns, latency, and success rates. Worked with Capeghemi consultants to get this work done and was an effective barrier to other operational teams to this initiative across the finish line. Recognized by his team lead for saving the project after leadership changes removed all others resources on the project.</li>
+          <li>Developed and published multiple reusable Terraform modules, including a Kubernetes SQL instance provisioner and a Cloud Function deployment notifier, significantly improving developer experience and standardizing infrastructure patterns.</li>
+        </ul>
+      </li>
+      <li><strong>Automation & Process Improvement:</strong>
+        <ul>
+          <li>Pioneered a new infrastructure testing methodology by implementing a Living Proof winning Terraform Mocks framework, leading to more reliable and efficient test cycles; delivered a team-wide presentation on the solution to drive adoption and elevate quality. Turned this work into applied learnings for effective AI System Prompts that were used to guide organization with Gemini and Copilot.</li>
+          <li>Contributed to the On-Demand Environments project by automating DNS record creation using Terraform and authoring comprehensive user documentation, enabling teams to self-service provision new environments. Mentored several engineers on effective Terraform module use to meet the change requirements of the on-demand environment initiative.</li>
+          <li>Showcased expert level debugging skills using multiple technologies in both production and staging issues, including a persistent Cloud Function deployment bug, incorrect IaC configurations for ProxySQL.</li>
+        </ul>
+      </li>
+      <li><strong>AI Adoption & Strategic Influence:</strong>
+        <ul>
+          <li>Scaled AI adoption across the enterprise, personally mentoring 50+ engineers on the effective, high-ROI use of Gemini and GitHub Copilot.</li>
+          <li>Authored foundational documents and created multiple video tutorials for the Clover AI Library, establishing a central repository for best practices that accelerated developer onboarding and proficiency.</li>
+          <li>Forged a key strategic relationship with the Fiserv AI Board for my upline, creating a direct channel to champion and enable broader AI integration at the highest levels of the company.</li>
+        </ul>
       </li>
     </ul>
-
-  <h3><strong>Work Experience:</strong></h3>
-
-  <p>Service Desk Technician at NEXT7IT 07/2023 - Present</p>
-  
-  <ul>
-    <li>Serve as the first point of contact for IT-related queries, 
-      demonstrating strong problem-solving skills and customer service 
-      to resolve issues efficiently and improve user satisfaction.</li>
-  </ul>
-  <ul>
-    <li>Provide comprehensive technical support and troubleshooting for a 
-      diverse set of technologies including FortiClient VPN, Fortigate firewalls, 
-      Microsoft services and applications, Active Directory, Azure, Unifi switches 
-      and access points, Crashplan, and StorageCraft.</li>
-  </ul>
-  <ul>
-    <li>Collaborate closely with IT teams and stakeholders to implement IT solutions 
-      and projects, contributing to the continuous improvement of IT services and infrastructure.</li>
-  </ul>
-
-  <p>FOH/A1 and A2 at VCI Event Technology 11/2018 - Present</p>
-
-  <ul>
-    <li>Operational knowledge and networking knowledge of video/audio playback
-      devices, audio consoles, wireless systems, comms, audio recorders, video
-      processors, projectors, editing equipment. Networking and configuration of 
-      multiple computers, audio, and video devices using Cisco switches, Dante 
-      Controller software, Clear Com interfaces, Clear Com software. Using multiple 
-      wireless access points to network all devices in heavily trafficked environments.
-    </li>
-  </ul>
-  <ul>
-    <li>Coordination with clients such as Boeing, Stryker, and Disney to meet the
-      technical demands required for live events and broadcast productions such as
-      Star Wars Galaxy’s Edge Dedication Moment.
-    </li>
-  </ul>
-
-  <h3><strong>Education:</strong></h3>
-
-  <ul>
-    <li>CompTIA A+ Core 1 220-1001</li>
-  </ul>
-  <ul>
-    <li>Terraform Certified Associate - Certificate Link:
-    <a href="https://www.credly.com/badges/c03706ab-9414-4178-912f-7e64619b5b26/linked_in?t=rgxcte">Credly Link</a></li>
-  </ul>
-  <ul>
-    <li>Dante Certified Level 1 and Level 2</li>
-  </ul>
-  <ul>
-    <li>Glendale Community College - Associate of Arts Degree 05/2000</li>
-  </ul>
+    <h3>NEXT7IT | Location Service Desk Technician | July 2023 – October 2024</h3>
+    <ul>
+      <li>Recognized for exceptional initiative by being named Employee of the Month for two consecutive months.</li>
+      <li>Earned this distinction by proactively dedicating personal weekend time to master company-specific systems and single-handedly optimize internal codebases, establishing a pattern of high performance that directly led to recruitment by Clover.</li>
+      <li>Served as the first point of contact for IT-related queries, demonstrating strong problem-solving skills and customer service to resolve issues efficiently and improve user satisfaction.</li>
+      <li>Provided comprehensive technical support and troubleshooting for a diverse set of technologies including FortiClient VPN, Fortigate firewalls, Microsoft services and applications, Active Directory, Azure, Unifi switches and access points, Crashplan, and StorageCraft.</li>
+      <li>Collaborated closely with IT teams and stakeholders to implement IT solutions and projects, contributing to the continuous improvement of IT services and infrastructure.</li>
+    </ul>
+    <h3>VCI Event Technology | Location FOH Audio Engineer (A1/A2) | Nov 2018 – July 2023</h3>
+    <ul>
+      <li>Gained extensive experience with the implementation and operation of complex distributed systems, designing and managing low-latency, high-availability audio and video networks over IP for high-profile clients like Disney and Boeing.</li>
+      <li>Operated and configured core networking components, including Cisco switches and load balancers, ensuring reliable system performance in high-stakes environments.</li>
+    </ul>
+  </section>
+  <section>
+    <h2>Certifications & Awards</h2>
+    <ul>
+      <li>Employee of the Month (Two-Time Recipient) - NEXT7IT</li>
+      <li>Living Proof Award - Clover/Fiserv Internal Recognition for Technical Excellence & Impact</li>
+      <li>HashiCorp Certified: Terraform Associate</li>
+      <li>CompTIA A+</li>
+    </ul>
+  </section>
   <hr>
-  <p>Thanks for visiting!</p>
-  <p>
-    Visitor count:
-    <a id="N"></a>
-
-  </p>
-
+  <footer>
+    <p>Thanks for visiting!</p>
+    <p>Visitor count: <a id="N"></a></p>
+  </footer>
   <script type="text/javascript" src="apifetch_jameswurbel.js"></script>
 </body>
 
