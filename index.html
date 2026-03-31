@@ -5,6 +5,9 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>James Wurbel Resume</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/reset.css">
   <link rel="stylesheet" href="css/styles.css">
 </head>
@@ -13,15 +16,14 @@
 
   <header>
     <h1>James Wurbel</h1>
-    <p>
-      <strong>Phone:</strong> (323) 350-4832 | 
-      <strong>Email:</strong> <a href="mailto:jameswurbel.it@gmail.com">jameswurbel.it@gmail.com</a> | 
-      <strong>Location:</strong> Sunnyvale, CA
-    </p>
-    <p>
-      <strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/james-wurbel-42425b3a/">James Wurbel LinkedIn</a> |
-      <strong>GitHub:</strong> <a href="https://github.com/jamesoundb">James Wurbel GitHub</a>
-    </p>
+    <p class="subtitle">Site Reliability Engineer</p>
+    <div class="contact-info">
+      <span class="contact-item">📍 Sunnyvale, CA</span>
+      <span class="contact-item">📧 <a href="mailto:jameswurbel.it@gmail.com">jameswurbel.it@gmail.com</a></span>
+      <span class="contact-item">📱 (323) 350-4832</span>
+      <span class="contact-item"><a href="https://www.linkedin.com/in/james-wurbel-42425b3a/">LinkedIn</a></span>
+      <span class="contact-item"><a href="https://github.com/jamesoundb">GitHub</a></span>
+    </div>
   </header>
   <section>
     <h2>Summary</h2>
@@ -31,35 +33,78 @@
   </section>
   <section>
     <h2>Core Competencies & Technical Skills</h2>
-    <ul>
-      <li><strong>Cloud Platforms:</strong> Google Cloud Platform (GCP), Amazon Web Services (AWS)</li>
-      <li><strong>Infrastructure as Code (IaC):</strong> Terraform, Packer, Crossplane, Custom Resource Definitions (XRDs), Compositions, Mutating Webhooks</li>
-      <li><strong>Security & IAM:</strong> HashiCorp Vault, Mutating Webhooks, Cloud Security Posture, Argo CD, Sentinel, GCP IAM, Cloud Armor</li>
-      <li><strong>Container & Orchestration:</strong> Kubernetes (GKE), Docker</li>
-      <li><strong>Scripting & Automation:</strong> Golang, Python, Cloud Functions, Rundeck</li>
-      <li><strong>Networking & Internet Principles:</strong> DNS, Load Balancing, HTTP/HTTPS, TCP/IP</li>
-      <li><strong>AI Integration:</strong> Gemini Code Assist, GitHub Copilot, Claude Code</li>
-    </ul>
+    <div class="skills-grid">
+      <div class="skill-category">
+        <span class="skill-label">Cloud Platforms</span>
+        <span class="badge">GCP</span>
+        <span class="badge">AWS</span>
+      </div>
+      <div class="skill-category">
+        <span class="skill-label">IaC</span>
+        <span class="badge">Terraform</span>
+        <span class="badge">Packer</span>
+        <span class="badge">Crossplane</span>
+        <span class="badge">XRDs</span>
+        <span class="badge">Compositions</span>
+        <span class="badge">Mutating Webhooks</span>
+      </div>
+      <div class="skill-category">
+        <span class="skill-label">Security & IAM</span>
+        <span class="badge">HashiCorp Vault</span>
+        <span class="badge">Argo CD</span>
+        <span class="badge">Sentinel</span>
+        <span class="badge">GCP IAM</span>
+        <span class="badge">Cloud Armor</span>
+      </div>
+      <div class="skill-category">
+        <span class="skill-label">Containers</span>
+        <span class="badge">Kubernetes (GKE)</span>
+        <span class="badge">Docker</span>
+      </div>
+      <div class="skill-category">
+        <span class="skill-label">Languages</span>
+        <span class="badge">Golang</span>
+        <span class="badge">Python</span>
+        <span class="badge">Cloud Functions</span>
+        <span class="badge">Rundeck</span>
+      </div>
+      <div class="skill-category">
+        <span class="skill-label">Networking</span>
+        <span class="badge">DNS</span>
+        <span class="badge">Load Balancing</span>
+        <span class="badge">HTTP/HTTPS</span>
+        <span class="badge">TCP/IP</span>
+      </div>
+      <div class="skill-category">
+        <span class="skill-label">AI Integration</span>
+        <span class="badge">Gemini Code Assist</span>
+        <span class="badge">GitHub Copilot</span>
+        <span class="badge">Claude Code</span>
+      </div>
+    </div>
   </section>
   <section>
     <h2>Professional Experience & Impact</h2>
-    <h3>Clover, a Fiserv Company | Sunnyvale, CA | Site Reliability Engineer | April 2024 – Present</h3>
+    <div class="job-header">
+      <span class="job-title"><span class="job-company">Clover, a Fiserv Company</span> · Site Reliability Engineer</span>
+      <span class="job-meta">Apr 2024 – Present · Sunnyvale, CA</span>
+    </div>
     <ul>
-      <li><strong>Platform Engineering & Architecture:</strong>
+      <li><p class="job-category">Platform Engineering & Architecture</p>
         <ul>
           <li>Spearheaded the Kubernetes Platform Abstraction for Vault, designing and implementing a mutating admission webhook in Golang to automate secret injection. This eliminated manual configurations for microservices and established a secure, standardized pattern for secrets management across the platform. These patterns were backported into other features elevating other compositions by taking the hardest composition and applying hard-won design patterns into future development efforts. Combined this forward thinking architecture with Project Onboarding for Crossplane that would accelerate engineering ramp-up for new engineers by several weeks.</li>
           <li>Engineered and configured an Istio Egress Gateway PoC to secure and control outbound traffic for microservices; deployed and configured Kiali to provide deep observability into service mesh traffic patterns, latency, and success rates. Worked with Capgemini consultants to complete this work and was an effective bridge to other operational teams to get this initiative across the finish line. Recognized by his team lead for saving the project after leadership changes removed all other resources.</li>
           <li>Developed and published multiple reusable Terraform modules, including a Kubernetes SQL instance provisioner and a Cloud Function deployment notifier, significantly improving developer experience and standardizing infrastructure patterns.</li>
         </ul>
       </li>
-      <li><strong>Automation & Process Improvement:</strong>
+      <li><p class="job-category">Automation & Process Improvement</p>
         <ul>
           <li>Pioneered a new infrastructure testing methodology by implementing a Living Proof award-winning Terraform Mocks framework, leading to more reliable and efficient test cycles; delivered a team-wide presentation on the solution to drive adoption and elevate quality. This work was translated into applied learnings for effective AI System Prompts that were used to guide the organization with Gemini and Copilot.</li>
           <li>Contributed to the On-Demand Environments project by automating DNS record creation using Terraform and authoring comprehensive user documentation, enabling teams to self-service provision new environments. Mentored several engineers on effective Terraform module use to meet the change requirements of the on-demand environment initiative.</li>
           <li>Showcased expert level debugging skills using multiple technologies in both production and staging issues, including a persistent Cloud Function deployment bug, incorrect IaC configurations for ProxySQL.</li>
         </ul>
       </li>
-      <li><strong>AI Adoption & Strategic Influence:</strong>
+      <li><p class="job-category">AI Adoption & Strategic Influence</p>
         <ul>
           <li>Scaled AI adoption across the enterprise, personally mentoring 50+ engineers on the effective, high-ROI use of Gemini and GitHub Copilot.</li>
           <li>Authored foundational documents and created multiple video tutorials for the Clover AI Library, establishing a central repository for best practices that accelerated developer onboarding and proficiency.</li>
@@ -67,7 +112,10 @@
         </ul>
       </li>
     </ul>
-    <h3>NEXT7IT | Location Service Desk Technician | July 2023 – October 2024</h3>
+    <div class="job-header">
+      <span class="job-title"><span class="job-company">NEXT7IT</span> · Service Desk Technician</span>
+      <span class="job-meta">Jul 2023 – Oct 2024</span>
+    </div>
     <ul>
       <li>Recognized for exceptional performance by being named Employee of the Month and Most Tickets Closed in the same month.</li>
       <li>Earned this distinction by proactively dedicating personal weekend time to master company-specific systems and learn software tools, establishing a pattern of high performance that directly led to recruitment by Clover.</li>
@@ -75,7 +123,10 @@
       <li>Provided comprehensive technical support and troubleshooting for a diverse set of technologies including FortiClient VPN, Fortigate firewalls, Microsoft services and applications, Active Directory, Azure, Unifi switches and access points, Crashplan, and StorageCraft.</li>
       <li>Handled Linux related tasks and troubleshooting, ensuring system stability and performance for clients that utilized Linux-based systems.</li>
     </ul>
-    <h3>VCI Event Technology | Location FOH Audio Engineer (A1/A2) | Nov 2018 – July 2023</h3>
+    <div class="job-header">
+      <span class="job-title"><span class="job-company">VCI Event Technology</span> · FOH Audio Engineer (A1/A2)</span>
+      <span class="job-meta">Nov 2018 – Jul 2023</span>
+    </div>
     <ul>
       <li>Gained extensive experience with the implementation and operation of complex distributed systems, designing and managing low-latency, high-availability audio and video networks over IP for high-profile clients like Disney and Boeing.</li>
       <li>Operated and configured core networking components, including Cisco switches and load balancers, ensuring reliable system performance in high-stakes environments.</li>
@@ -83,16 +134,16 @@
   </section>
   <section>
     <h2>Certifications & Awards</h2>
-    <ul>
-      <li>Employee of the Month (Two-Time Recipient) - NEXT7IT</li>
-      <li>Living Proof Award - Clover/Fiserv Internal Recognition for Technical Excellence & Impact</li>
-      <li>HashiCorp Certified: Terraform Associate</li>
-      <li>CompTIA A+</li>
-    </ul>
+    <div class="cert-list">
+      <div class="cert-item">Employee of the Month (Two-Time Recipient) — NEXT7IT</div>
+      <div class="cert-item">Living Proof Award — Clover/Fiserv Internal Recognition for Technical Excellence & Impact</div>
+      <div class="cert-item">HashiCorp Certified: Terraform Associate</div>
+      <div class="cert-item">CompTIA A+</div>
+    </div>
   </section>
   <footer>
     <p>Thanks for visiting!</p>
-    <p>Visitor count: <a id="N"></a></p>
+    <p>Visitors: <span class="visitor-count" id="N"></span></p>
   </footer>
   <script type="text/javascript" src="apifetch_jameswurbel.js"></script>
 </body>
