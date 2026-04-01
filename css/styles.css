@@ -314,3 +314,50 @@ hr {
   height: 1px;
   margin: var(--spacing-lg) 0;
 }
+
+/* ==========================================================================
+   Print
+   ========================================================================== */
+@media print {
+  :root {
+    --color-bg: #ffffff;
+    --color-surface: #f8fafc;
+    --color-surface-hover: #f1f5f9;
+    --color-text: #1e293b;
+    --color-text-muted: #475569;
+    --color-heading: #0f172a;
+    --color-accent: #0369a1;
+    --color-divider: #cbd5e1;
+    --color-badge-bg: #f1f5f9;
+    --color-badge-text: #0369a1;
+  }
+
+  body {
+    padding: 0;
+    font-size: 0.85rem;
+  }
+
+  h1 {
+    font-size: 1.75rem;
+  }
+
+  h2 {
+    margin-top: var(--spacing-lg);
+  }
+
+  .badge {
+    border: 1px solid var(--color-divider);
+  }
+
+  .cert-item {
+    border-left-color: var(--color-accent);
+  }
+
+  footer {
+    display: none;
+  }
+
+  section, .job-header {
+    break-inside: avoid;
+  }
+}
