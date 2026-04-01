@@ -16,7 +16,7 @@
 
   <header>
     <h1>James Wurbel</h1>
-    <p class="subtitle">Site Reliability Engineer</p>
+    <p class="subtitle">Cloud Platform Engineer</p>
     <div class="contact-info">
       <span class="contact-item">📍 <a href="https://www.google.com/maps/place/Sunnyvale,+CA" target="_blank" rel="noopener">Sunnyvale, CA</a></span>
       <span class="contact-item">📧 <a href="mailto:jameswurbel.it@gmail.com">jameswurbel.it@gmail.com</a></span>
@@ -28,11 +28,11 @@
   <section>
     <h2>Summary</h2>
     <p>
-      A results-driven engineer with extensive hands-on experience in public cloud technologies (GCP/AWS), specializing in Infrastructure as Code (IaC), automation, and security. Recognized for performing at a senior level to enable application teams to migrate and operate services securely, reliably, and efficiently in the cloud. Proven ability to architect foundational cloud solutions, remediate security findings, and streamline operations through custom tooling. A relentless self-starter with a track record of going above and beyond to master complex distributed systems and mentor peers. Currently driving Kubernetes and AI adoption as a personal initiative to stay ahead of the technology curve.
+      A results-driven platform engineer with extensive hands-on experience designing and building cloud infrastructure abstractions on GCP and AWS. Specializes in Infrastructure as Code (Terraform), Kubernetes platform abstractions (Crossplane), and GitOps to enable engineering teams for self-service cloud adoption. Recognized for architecting end-to-end platform solutions—from Vault secret injection automation to Crossplane composition frameworks that accelerate developer onboarding. Proven ability to bridge operational complexity and developer experience, automate infrastructure patterns, and mentor teams on platform best practices. Relentless self-starter driving Kubernetes and AI adoption across organizations.
     </p>
   </section>
   <section>
-    <h2>Core Competencies & Technical Skills</h2>
+    <h2>Technical Skills</h2>
     <div class="skills-grid">
       <div class="skill-category">
         <span class="skill-label">Cloud Platforms</span>
@@ -40,10 +40,11 @@
         <span class="badge">AWS</span>
       </div>
       <div class="skill-category">
-        <span class="skill-label">IaC</span>
+        <span class="skill-label">Infrastructure & Platform</span>
         <span class="badge">Terraform</span>
         <span class="badge">Packer</span>
         <span class="badge">Helm</span>
+        <span class="badge">Crossplane</span>
       </div>
       <div class="skill-category">
         <span class="skill-label">CI/CD & GitOps</span>
@@ -64,10 +65,10 @@
       </div>
       <div class="skill-category">
         <span class="skill-label">Kubernetes</span>
-        <span class="badge">Crossplane</span>
         <span class="badge">XRDs</span>
         <span class="badge">Compositions</span>
         <span class="badge">Mutating Webhooks</span>
+        <span class="badge">Admission Webhooks</span>
       </div>
       <div class="skill-category">
         <span class="skill-label">Languages</span>
@@ -99,14 +100,15 @@
         <span class="badge">Claude Code</span>
       </div>
       <div class="skill-category">
-        <span class="skill-label">General</span>
+        <span class="skill-label">Automation</span>
         <span class="badge">Cloud Functions</span>
         <span class="badge">Rundeck</span>
+        <span class="badge">Bash</span>
       </div>
     </div>
   </section>
   <section>
-    <h2>Professional Experience & Impact</h2>
+    <h2>Professional Experience</h2>
     <div class="job-header">
       <span class="job-title"><span class="job-company">Clover, a Fiserv Company</span> · Site Reliability Engineer</span>
       <span class="job-meta">Apr 2024 – Present · Sunnyvale, CA</span>
@@ -114,46 +116,42 @@
     <ul>
       <li><p class="job-category">Platform Engineering & Architecture</p>
         <ul>
-          <li>Pivoted from the Networking & Infrastructure team to collaborate with Cloud Platform Engineering, spearheading the Kubernetes Platform Abstraction for Vault by designing and implementing a mutating admission webhook in Golang to automate secret injection. Eliminated manual configurations for microservices and established a secure, standardized secrets management pattern across the platform. Backported hard-won design patterns into subsequent Crossplane compositions, elevating platform quality and accelerating new engineer onboarding by several weeks.</li>
-          <li>Engineered and configured an Istio Egress Gateway PoC to secure and control outbound traffic for microservices; deployed and configured Kiali to provide deep observability into service mesh traffic patterns, latency, and success rates. Worked with Capgemini consultants to complete this work and was an effective bridge to other operational teams to get this initiative across the finish line. Recognized by his team lead for saving the project after leadership changes removed all other resources.</li>
-          <li>Developed and published multiple reusable Terraform modules, including a Kubernetes SQL instance provisioner and a Cloud Function deployment notifier, significantly improving developer experience and standardizing infrastructure patterns.</li>
-          <li>Implemented and maintained GitOps workflows using GitHub, Argo CD, and Helm to continuously deploy Crossplane compositions and infrastructure to GKE clusters, ensuring declarative, auditable, and repeatable deployments across environments.</li>
-          <li>Designed and implemented Crossplane-related alerting in Grafana, managed entirely via Terraform, with alert routing to Slack channels and PagerDuty for real-time incident response and platform health visibility.</li>
+          <li>Designed and implemented a Kubernetes mutating admission webhook in Golang to automate Vault secret injection, eliminating manual secret configuration across platform microservices. Backported design patterns into Crossplane compositions, accelerating new engineer onboarding by several weeks.</li>
+          <li>Engineered an Istio Egress Gateway PoC to secure outbound microservice traffic; configured Kiali for service mesh observability across traffic patterns, latency, and success rates. Recognized for saving the project after leadership changes removed all other resources.</li>
+          <li>Developed and published reusable Terraform modules (Kubernetes SQL provisioner, Cloud Function notifier), standardizing infrastructure patterns and improving developer self-service experience.</li>
+          <li>Implemented GitOps workflows using Argo CD and Helm to continuously deploy Crossplane compositions to GKE clusters, ensuring declarative, auditable deployments across environments.</li>
+          <li>Built Crossplane alerting in Grafana, managed entirely via Terraform, with routing to Slack and PagerDuty for real-time incident response and platform health visibility.</li>
         </ul>
       </li>
       <li><p class="job-category">Automation & Process Improvement</p>
         <ul>
-          <li>Pioneered a new infrastructure testing methodology by implementing a Living Proof award-winning Terraform Mocks framework, leading to more reliable and efficient test cycles; delivered a team-wide presentation on the solution to drive adoption and elevate quality. This work was translated into applied learnings for effective AI System Prompts that were used to guide the organization with Gemini and Copilot.</li>
-          <li>Contributed to the On-Demand Environments project by automating DNS record creation using Terraform and authoring comprehensive user documentation, enabling teams to self-service provision new environments. Mentored several engineers on effective Terraform module use to meet the change requirements of the on-demand environment initiative.</li>
-          <li>Showcased expert level debugging skills using multiple technologies in both production and staging issues, including a persistent Cloud Function deployment bug, incorrect IaC configurations for ProxySQL.</li>
+          <li>Pioneered an award-winning (Living Proof Award) Terraform Mocks testing framework, improving infrastructure test reliability. Delivered team-wide training to drive adoption and translated methodology into AI system prompts used organization-wide.</li>
+          <li>Automated DNS record creation for On-Demand Environments using Terraform, enabling self-service environment provisioning. Authored documentation and mentored engineers on Terraform module patterns.</li>
+          <li>Diagnosed and resolved production incidents across Cloud Functions, ProxySQL, and IaC configurations, demonstrating cross-stack debugging expertise in both production and staging environments.</li>
         </ul>
       </li>
       <li><p class="job-category">AI Adoption & Strategic Influence</p>
         <ul>
-          <li>Scaled AI adoption across the enterprise, personally mentoring 50+ engineers on the effective, high-ROI use of Gemini and GitHub Copilot.</li>
-          <li>Authored foundational documents and created multiple video tutorials for the Clover AI Library, establishing a central repository for best practices that accelerated developer onboarding and proficiency.</li>
-          <li>Forged a key strategic relationship with the Fiserv AI Board, creating a direct channel to champion and enable broader AI integration at the highest levels of the company.</li>
+          <li>Scaled AI adoption across the enterprise, personally mentoring 50+ engineers on high-ROI use of Gemini and GitHub Copilot.</li>
+          <li>Authored foundational documents and video tutorials for the Clover AI Library, establishing a central repository that accelerated developer onboarding and proficiency.</li>
+          <li>Forged a strategic relationship with the Fiserv AI Board, creating a direct channel to champion broader AI integration at the executive level.</li>
         </ul>
       </li>
     </ul>
     <div class="job-header">
       <span class="job-title"><span class="job-company">NEXT7IT</span> · Service Desk Technician</span>
-      <span class="job-meta">Jul 2023 – Oct 2024</span>
+      <span class="job-meta">Jul 2023 – Apr 2024</span>
     </div>
     <ul>
-      <li>Recognized for exceptional performance by being named Employee of the Month and Most Tickets Closed in the same month.</li>
-      <li>Earned this distinction by proactively dedicating personal weekend time to master company-specific systems and learn software tools, establishing a pattern of high performance that directly led to recruitment by Clover.</li>
-      <li>Served as the first point of contact for IT-related queries, demonstrating strong problem-solving skills and customer service to resolve issues efficiently and improve user satisfaction.</li>
-      <li>Provided comprehensive technical support and troubleshooting for a diverse set of technologies including FortiClient VPN, Fortigate firewalls, Microsoft services and applications, Active Directory, Azure, Unifi switches and access points, Crashplan, and StorageCraft.</li>
-      <li>Handled Linux related tasks and troubleshooting, ensuring system stability and performance for clients that utilized Linux-based systems.</li>
+      <li>Named Employee of the Month and Most Tickets Closed simultaneously, driven by proactively dedicating personal time to master company systems. Performance directly led to recruitment by Clover/Fiserv.</li>
+      <li>Provided technical support across FortiClient VPN, Fortigate firewalls, Active Directory, Azure, Unifi networking, and Linux systems, resolving issues efficiently as first point of contact.</li>
     </ul>
     <div class="job-header">
       <span class="job-title"><span class="job-company">VCI Event Technology</span> · FOH Audio Engineer (A1/A2)</span>
       <span class="job-meta">Nov 2018 – Jul 2023</span>
     </div>
     <ul>
-      <li>Gained extensive experience with the implementation and operation of complex distributed systems, designing and managing low-latency, high-availability audio and video networks over IP for high-profile clients like Disney and Boeing.</li>
-      <li>Operated and configured core networking components, including Cisco switches and load balancers, ensuring reliable system performance in high-stakes environments.</li>
+      <li>Designed and managed low-latency, high-availability audio/video networks over IP for clients including Disney and Boeing, operating Cisco switches and networking infrastructure in high-stakes live environments.</li>
     </ul>
   </section>
   <section>
